@@ -12,16 +12,19 @@
 
 <h2>📁 Project Structure</h2>
 <pre>
-├── run.py
-├── requirements.txt
-├── Procfile
-├── templates/
-│   ├── layout.html
-│   ├── index.html
-│   └── update.html
-├── static/
-│   └── style.css (if any)
-└── forms.py
+flaskmongodb/
+│
+├── application/
+  ├── __init__.py         ← Initializes Flask app and MongoDB
+  └── routes.py
+    ├── templates/              ← Jinja2 HTML templates
+    ├── view_todos.html
+    ├── add_todo.html
+    └── layout.html         
+  └── forms.py
+├── run.py                  ← Entry point for running the app
+├── requirements.txt        ← Python package dependencies
+
 </pre>
 
 <h2>🚀 How to Deploy on Render</h2>
